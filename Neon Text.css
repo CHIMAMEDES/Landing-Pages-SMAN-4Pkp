@@ -1,0 +1,155 @@
+/* Efek Neon pada Teks */
+.neon-text {
+    color: #fff;
+    text-shadow: 
+        0 0 10px #fff, 
+        0 0 20px #1a73e8,
+        0 0 30px #1a73e8,
+        0 0 40px #1a73e8,
+        0 0 50px #1a73e8,
+        0 0 60px #1a73e8,
+        0 0 70px #1a73e8;
+    font-family: 'Orbitron', sans-serif; /* Menggunakan font futuristik */
+}
+
+/* Efek Neon pada Tombol */
+.neon-button {
+    padding: 10px 20px;
+    color: #fff;
+    border: 2px solid #1a73e8;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 5px #1a73e8;
+    box-shadow: 
+        0 0 20px #1a73e8,
+        0 0 30px #1a73e8,
+        0 0 40px #1a73e8;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.neon-button:hover {
+    color: #ffcc00;
+    box-shadow: 
+        0 0 30px #ffcc00,
+        0 0 40px #ffcc00,
+        0 0 50px #ffcc00;
+}
+body {
+    background: linear-gradient(-45deg, #1a73e8, #009688, #673ab7, #ff5722);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.sticky-header nav ul li a {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+.sticky-header nav ul li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: -100%;
+    background-color: #ffcc00;
+    transition: left 0.3s;
+}
+
+.sticky-header nav ul li a:hover:before {
+    left: 0;
+}
+.parallax-section {
+    background-image: url('images/futuristic-background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-section .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+}
+.card-3d {
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    background-color: #000;
+    margin: 20px auto;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-3d:hover {
+    transform: rotateY(15deg) rotateX(15deg);
+}
+
+.card-3d-content {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+.glow-button {
+    border: 2px solid #1a73e8;
+    padding: 10px 25px;
+    color: #fff;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.glow-button:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 204, 0, 0.1);
+    z-index: -1;
+    transition: transform 0.4s ease;
+    transform: rotate(45deg) scale(0);
+}
+
+.glow-button:hover {
+    color: #ffcc00;
+}
+
+.glow-button:hover:before {
+    transform: rotate(45deg) scale(1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    background-color: #121212;
+}

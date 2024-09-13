@@ -1,0 +1,36 @@
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+}
+
+.music-player audio {
+    width: 300px;
+    border-radius: 5px;
+}
+
+/* Mengatur Tampilan Kontrol */
+.music-player audio::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.music-player audio::-webkit-media-controls-play-button,
+.music-player audio::-webkit-media-controls-volume-slider {
+    filter: brightness(0.8);
+}
+
+.music-player audio::-webkit-media-controls-timeline {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.music-player audio::-webkit-media-controls-current-time-display,
+.music-player audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}

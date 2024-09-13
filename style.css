@@ -1,0 +1,459 @@
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+  
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 115, 232, 0.7);
+    z-index: 1;
+}
+
+.hero h1 {
+    position: relative;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.hero p {
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+}
+
+/* Content Sections */
+.content-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 40px 20px;
+    border-radius: 10px;
+}
+
+.content-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #1a73e8;
+    font-weight: 600;
+}
+
+.content-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6em;
+}
+
+/* Student Grid */
+.student-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.student-card {
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.student-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    border: 5px solid #1a73e8;
+}
+
+.student-card p {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Activities Section */
+.content-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-section ul li {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.content-section ul li::before {
+    content: '✔';
+    color: #1a73e8;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Formulir Kontak */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #1a73e8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 5px solid #ffcc00;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .content-section {
+        margin: 20px 10px;
+        padding: 60px 10px;
+    }
+
+    .student-card {
+        width: 180px;
+    }
+}
+/* Efek Hover untuk Kartu Siswa */
+.student-card {
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.student-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: #e8f0fe;
+}
+
+.student-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    border: 5px solid #1a73e8;
+    transition: transform 0.3s;
+}
+
+.student-card:hover img {
+    transform: scale(1.1);
+}
+/* Transisi Halus untuk Menu Navigasi */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+/* Efek Parallax untuk Hero Section */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 115, 232, 0.7);
+    z-index: 1;
+}
+/* Gaya Tombol Kirim Pesan */
+button[type="submit"] {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* Gaya Hover untuk Daftar Kegiatan */
+.content-section ul li {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.content-section ul li:hover {
+    color: #1a73e8;
+    transform: scale(1.05);
+}
+/* Gaya Link */
+a {
+    color: #1a73e8; /* Biru */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi warna halus */
+}
+
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+    color: #0056b3; /* Warna biru gelap saat hover */
+}
+/* Media Sosial Section */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.facebook img {
+    border: 2px solid #3b5998; /* Warna biru Facebook */
+    border-radius: 50%;
+}
+
+.twitter img {
+    border: 2px solid #1da1f2; /* Warna biru Twitter */
+    border-radius: 50%;
+}
+
+.instagram img {
+    border: 2px solid #e4405f; /* Warna merah Instagram */
+    border-radius: 50%;
+}
+
+.linkedin img {
+    border: 2px solid #0077b5; /* Warna biru LinkedIn */
+    border-radius: 50%;
+}
+
+
+.about-section, .features-section, .register-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+.background-image {
+    background-image: url('https://lh3.googleusercontent.com/p/AF1QipPxV_Z1JO7zRUVK1ITrAoq0H2NpvkKsm9hZIUxz=s680-w680-h510');
+    background-size: cover; /* Atur gambar agar menutupi seluruh elemen */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-repeat: no-repeat; /* Jangan ulangi gambar */
+    width: 100%; /* Lebar elemen sesuai dengan kontainer */
+    height: 100vh; /* Tinggi elemen sesuai dengan tinggi layar */
+}
+
+header .cta-button {
+    background: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.about-section, .features-section, .register-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-item {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;

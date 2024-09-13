@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KELAS XII 4 SMAN 4 PANGKALPINANG</title>
+    <a href="#about" class="cta-button">Pelajari Lebih Lanjut</a>
+</div>
+</header>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Neon Text.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<!-- Header Section -->
+ <header>
+    <div class="logo">
+        <img src="c:\Users\redof\Downloads\LOGO SMAN.PNG" alt="Logo SMAN 4 Pangkalpinang">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#siswa">Daftar Siswa Pengembang</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="stars">
+        <div class="stars-layer">
+            <div class="star" style="top: 10%; left: 20%;"></div>
+            <div class="star" style="top: 40%; left: 80%;"></div>
+            <div class="star" style="top: 60%; left: 50%;"></div>
+            <div class="star" style="top: 30%; left: 10%;"></div>
+            <div class="star" style="top: 50%; left: 90%;"></div>
+            <!-- Tambahkan lebih banyak bintang sesuai kebutuhan -->
+        </div>
+    </div>
+
+    <div class="planet"></div>
+    <div class="nebula"></div>
+
+    <!-- Konten lainnya seperti header, section, dll. -->
+    <section class="content">
+        <h1 class="neon-text">Welcome to SMAN 4 Pangkalpinang</h1>
+        <p class="neon-text">Kelas XII 4 - Galaxy Theme</p>
+        <button class="neon-button">Explore</button>
+    </section>
+</body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service - Kelas XII 4 SMAN4 Pangkalpinang</title>
+    <link rel="stylesheet" href="Customer Service.css">
+</head>
+<body>
+    <!-- Konten Halaman Anda -->
+    
+    <!-- Layanan Pengguna Chat (Pop-up) -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <span>Customer Service</span>
+            <button onclick="toggleChat()">X</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <!-- Pesan Awal dari Bot atau CS -->
+            <div class="message bot">Selamat datang! Ada yang bisa kami bantu?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Tulis pesan...">
+            <button onclick="sendMessage()">Kirim</button>
+        </div>
+    </div>
+
+    <!-- Tombol untuk membuka layanan chat -->
+   <button class="chat-toggle-btn" onclick="toggleChat()">Chat dengan CS (Redo)</button>
+
+    <!-- Script JavaScript untuk Mengendalikan Chat -->
+    <script>
+        function toggleChat() {
+            const chatPopup = document.getElementById('chatPopup');
+            chatPopup.classList.toggle('active');
+        }
+
+        function sendMessage() {
+            const userInput = document.getElementById('userInput');
+            const message = userInput.value.trim();
+            
+            if (message) {
+                // Tambahkan pesan pengguna ke chat body
+                const chatBody = document.getElementById('chatBody');
+                const userMessage = document.createElement('div');
+                userMessage.className = 'message user';
+                userMessage.textContent = message;
+                chatBody.appendChild(userMessage);
+                
+                // Kosongkan input setelah mengirim pesan
+                userInput.value = '';
+
+                // Respon Bot Sederhana
+                const botMessage = document.createElement('div');
+                botMessage.className = 'message bot';
+                botMessage.textContent = "Terima kasih atas pesan Anda. Mohon tunggu sebentar, CS kami akan segera merespon.";
+                chatBody.appendChild(botMessage);
+
+                // Gulung ke bawah untuk melihat pesan terbaru
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>KELAS XII 4 SMAN 4 PANGKALPINANG</h1>
+    <p>Satu Kelas, Satu Tujuan, Bersama Mencapai Impian!</p>
+</section>
+<!-- Tentang Kami Section -->
+<section id="tentang" class="content-section">
+    <div class="background-image"></div>
+
+    <h2>Tentang Kami</h2> 
+    <p>Wesite ini Dibuat Oleh Pelajar SMAN 4 PANGKALPINANG Dalam Rangka Projek P5, Website in Dibuat Oleh 6 Orang Siswa, Kelas XII 4 SMAN 4 Pangkalpinang adalah kelas yang penuh semangat dan kebersamaan. Dipimpin oleh guru wali yang berdedikasi, kami selalu berusaha menjadi yang terbaik dalam akademik maupun non-akademik,
+    SMAN 4 PANGKAL PINANG adalah salah satu satuan pendidikan dengan jenjang SMA di Kel. Ampui, Kec. Pangkal Balam, Kota Pangkalpinang, Kepulauan Bangka Belitung. Dalam menjalankan kegiatannya, SMAN 4 PANGKAL PINANG berada di bawah naungan Kementerian Pendidikan dan Kebudayaan.
+
+    ALAMAT SMAN 4 PANGKAL PINANG
+    SMAN 4 PANGKAL PINANG beralamat di JL. R. HUNDANI, Kel. Ampui, Kec. Pangkal Balam, Kota Pangkalpinang, Kepulauan Bangka Belitung, dengan kode pos 33116.
+    
+    KONTAK YANG DAPAT DIHUBUNGI
+    Apabila anda ingin bertanya atau menghubungi langsung SMAN 4 PANGKAL PINANG, dapat melalui beberapa media. Website sekolah dapat dibuka melalui <!-- Tambahkan ini di tempat yang sesuai dalam HTML -->
+    <p>Untuk informasi lebih lanjut, kunjungi situs resmi kami di <a href="https://sman4pkp.sch.id/" target="_blank">SMAN 4 Pangkalpinang</a><head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</p>
+     Apabila ingin mengirimkan surat elektronik (email), dapat dikirimkan ke sman4@dinpendikpkp.go.id. Apabila ingin mengirimkan fax, dapat dikirimkan ke 0717424890.
+    
+    FASILITAS YANG DISEDIAKAN SMAN 4 PANGKAL PINANG
+    SMAN 4 PANGKAL PINANG menyediakan listrik untuk membantu kegiatan belajar mengajar. Sumber listrik yang digunakan oleh SMAN 4 PANGKAL PINANG berasal dari PLN.
+    
+    JAM PEMBELAJARAN DI SMAN 4 PANGKAL PINANG
+    Pembelajaran di SMAN 4 PANGKAL PINANG dilakukan pada Sehari Penuh. Dalam seminggu, pembelajaran dilakukan selama 5 hari.
+    
+    AKREDITASI
+    SMAN 4 PANGKAL PINANG memiliki akreditasi A, berdasarkan sertifikat 15 tahun 2017.</p>
+
+</section>
+
+<!-- Daftar Siswa Section -->
+<section id="siswa" class="content-section">
+    <h2>Daftar Siswa Pengembang Landing Pages Ini:</h2>
+    <div class="student-grid">
+        <!-- Contoh Siswa -->
+        <div class="student-card">
+            <img src="c:\Users\redof\Downloads\Hans.jpg" alt="Nama Siswa">
+            <p>Nama Siswa: Sirhan Muzaffar (Ketua Proggramer) </p>
+        </div>
+        <div class="student-card">
+            <img src="d:\Blue Archive\Serika (2).jpg" alt="Nama Siswa">
+            <p>Nama Siswa: Redo Fajaryandi (Proggramer)</p>
+        </div>
+        <div class="student-card">
+            <img src="c:\Users\redof\Downloads\Anime.jpg" alt="Nama Siswa"> 
+            <p>Nama Siswa: Anjelita Cahaya</p>
+        </div>
+        <div class="student-card">
+            <img src="c:\Users\redof\Downloads\Reisa.jpg" alt="Nama Siswa">
+            <p>Nama Siswa: Eisyah Hasbah Sridevi</p>
+        </div>
+        <div class="student-card">
+            <img src="c:\Users\redof\Downloads\Shiroko.jpg" alt="Nama Siswa">
+            <p>Nama Siswa: Rika Armanda</p>
+        </div>
+        <div class="student-card">
+            <img src="c:\Users\redof\Downloads\Gura.jpg" alt="Nama Siswa">
+            <p>Nama Siswa: Salsa Nabila Putri Sasri</p>
+        </div>
+        <!-- Tambahkan lebih banyak siswa di sini --><!-- Daftar Siswa Section -->
+</div>
+</section>
+
+    </div>
+</section>
+
+<!-- Kegiatan Section -->
+<section id="features" class="features-section">
+    <div class="container">
+        <h2>Fasilitas dan Program</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>Laboratorium Sains</h3>
+                <p>Laboratorium sains yang lengkap dan modern untuk pembelajaran interaktif.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Perpustakaan Digital</h3>
+                <p>Akses ke berbagai koleksi buku digital dan bahan pembelajaran.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Program Ekstrakurikuler</h3>
+                <p>Beragam kegiatan ekstrakurikuler untuk mengembangkan bakat dan minat siswa.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Laboratorium Komputer</h3>
+                    <p>Akses Penggunaan Teknologi Komputer Untuk Mengakses Internet Guna Meningkatkan Literasi, Pemahaman Dalam Belajar
+                        Serta Mahir Dalam Penggunaan Teknologi Di Era Modern Yang Berguna Di Masa Depan</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Gerakan sekolah Sehat (GSS)</h3>
+                        <p>Sekolah Kami Juga Menerapkan GSS Karena Merupakan upaya yang dilakukan secara bersama-sama dan terus menerus oleh semua pihak mulai dari pemerintah pusat sampai ke pemerintah daerah, para mitra, satuan pendidikan, masyarakat pemangku kepentingan lainnya tentang pentingnya penerapan Sekolah Sehat dengan berfokus pada Sehat Bergizi, Sehat Fisik dan Sehat Imunisasi di satuan pendidikan.
+                        </p>
+                    </div>
+        </div>
+    </div>
+</section>
+
+<section id="kegiatan" class="content-section">
+    <h2>Kegiatan</h2>
+    <p>Kami aktif dalam berbagai kegiatan seperti lomba, ekskul, dan acara sekolah. Berikut beberapa kegiatan yang telah kami ikuti:</p>
+    <ul>
+        <li>Lomba Debat Bahasa Indonesia</li>
+        <li>Pentas Seni</li>
+        <li>Jalan Sehat</li>
+        <!-- Tambahkan kegiatan lainnya di sini -->
+    </ul>
+</section>
+
+<!-- Kontak Section -->
+<section id="kontak" class="content-section">
+<h2>Kontak</h2>
+<p>Untuk informasi lebih lanjut, silakan hubungi kami melalui formulir di bawah ini:</p>
+
+<!-- Formulir Kontak -->
+<form id="contact-form">
+    <div class="form-group">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini" required></textarea>
+    </div>
+    <button type="submit">Kirim Pesan</button>
+</form>
+
+<p>Email: info@sman4pangkalpinang.sch.id</p>
+<p>Telepon: (0717) 424890</p>
+</section>
+<!-- Media Sosial Section -->
+<section id="media-sosial" class="content-section">
+<h2>Ikuti Kami di Media Sosial</h2>
+<div class="social-links">
+    <a href="https://www.facebook.com/profile.php?id=100075948287385&mibextid=ZbWKwL" target="_blank" class="social-icon facebook">
+        <img src="c:\Users\redof\Downloads\logo-facebookpng-32242.png" alt="Facebook">
+    </a>
+    <a href="https://x.com/SMAN4PKP" target="_blank" class="social-icon twitter">
+        <img src="c:\Users\redof\Downloads\Logo X.PNG" alt="Twitter">
+    </a>
+    <a href="https://www.instagram.com/smapaofc?igsh=azg1cngxdTBtbjJ3" target="_blank" class="social-icon instagram">
+        <img src="c:\Users\redof\Downloads\logo-ig-png-32464.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/qr/DH3OJGX6JA37J1" target="_blank" class="social-icon WhatsApp">
+        <img src="c:\Users\redof\Downloads\images (1).jpeg">
+    </a>
+</div>
+</section>
+
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 KELAS XII 4 SMAN 4 PANGKALPINANG. Semua Hak Cipta Dilindungi.</p>
+</footer>
+<body>  <!-- Music Player -->
+    <div class="music-player">
+     <audio id="background-music" controls autoplay loop>
+         <source src="c:\Users\redof\Downloads\Lirik Lagu Pelajar Pancasila.mp3" type="audio/mp3">
+         Your browser does not support the audio element.
+     </audio>
+ </div>
+ </body>
+</html>
+
+
+

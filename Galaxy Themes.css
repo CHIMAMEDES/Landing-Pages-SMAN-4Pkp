@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(120deg, #2e026d, #000428);
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+}
+
+/* Efek Bintang */
+.stars {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.star {
+    width: 2px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: twinkling 10s infinite alternate;
+}
+
+@keyframes twinkling {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
+}
+
+/* Animasi Bintang Bergerak */
+@keyframes move {
+    from { transform: translateY(0); }
+    to { transform: translateY(-1000px); }
+}
+
+.stars-layer {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: transparent;
+    animation: move 60s linear infinite;
+}
+
+.stars-layer:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    top: 100%;
+    left: 0;
+}
+/* Planet */
+.planet {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at 100px 100px, #ffcc00, #d4a700, #b58900);
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    animation: planet-move 20s infinite alternate ease-in-out;
+}
+
+@keyframes planet-move {
+    0% { transform: translateX(0) rotate(0deg); }
+    100% { transform: translateX(200px) rotate(360deg); }
+}
+
+/* Nebula */
+.nebula {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,0,255,0.2), rgba(0,0,255,0) 70%);
+    border-radius: 50%;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: nebula-fade 10s infinite alternate ease-in-out;
+}
+
+@keyframes nebula-fade {
+    0% { opacity: 0.6; }
+    100% { opacity: 0.2; }
+}
